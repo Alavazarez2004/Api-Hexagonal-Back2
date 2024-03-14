@@ -1,0 +1,74 @@
+- - - - Alumno - - - -
+
+###
+GET http://localhost:3000/alumno/visualizarAlumnos HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/alumno/agregarAlumno HTTP/1.1
+Content-Type: application/json
+
+{
+  "id" : 2,
+  "nombre" : "Jordi Daniel",
+  "contraseña" : "Moto23",
+  "apellidoPaterno" : "Reyes",
+  "apellidoMaterno" : "Hernández"
+}
+
+###
+DELETE http://localhost:3000/alumno/eliminarAlumno HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre" : "*"
+}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - Material - - - -
+
+###
+GET http://localhost:3000/suscripcion/visualizarSuscripciones HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/suscripcion/agregarSuscripcion HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre_producto" : "Libreta",
+  "password" : "libreta"
+}
+
+###
+DELETE http://localhost:3000/suscripcion/eliminarSuscripcion HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre_producto" : "*"
+}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+- - - - Tarea - - - -
+###
+GET http://localhost:3000/tarea/visualizarTareas HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:3000/tarea/agregarTarea HTTP/1.1
+Content-Type: application/json
+
+{
+  "id" : 1,
+  "nombre" : "Tarea de Matemáticas"
+}
+
+###
+DELETE http://localhost:3000/tarea/eliminarTarea HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : 1
+}
